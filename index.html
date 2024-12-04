@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        header{
+            background-color: rgb(136, 219, 219);
+            width: 100vw;
+           
+        }
+        h1{
+            margin: 0;
+            text-align: center;
+            padding: 10px;
+        }
+        .main{
+           padding: 10px;
+            width: 30vw;
+            min-height: 100px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin: 50px auto ;
+            background-color: rgb(219, 150, 150);
+            border-radius: 10px;
+            
+        }
+        label{
+           background-color:rgb(43, 63, 71); 
+           color: white;
+           font-size: 20px;
+           padding: 10px;
+           border-radius: 10px;
+           margin-left: 5px;
+        }
+        form{
+            text-align: center;
+            
+        }
+
+        #n1:checked ~ .main {
+            transform: none;
+        }
+        #n2:checked ~ .main {
+            transform: rotate(10deg);
+        }
+        #n3:checked ~ .main {
+            transform: rotate(45deg);
+        }
+        #n4:checked ~ .main {
+            transform: rotate3d(1, 2, 1, 45deg);
+        }
+        #n5:checked ~ .main {
+            transform: rotate3d(0, 1, 0, 60deg);
+        }
+        #n6:checked ~ .main {
+            transform: rotateX(45deg);
+        }
+        #n7:checked ~ .main {
+            transform: rotateX(100deg);
+        }
+        #n8:checked ~ .main {
+            transform: rotateY(45deg);
+        }
+        #n9:checked ~ .main {
+            transform: rotateY(80deg);
+        }
+        #n10:checked ~ .main {
+            transform: rotateZ(45deg);
+        }
+        #n11:checked ~ .main {
+            transform: rotateZ(90deg);
+        }
+        #n12:checked ~ .main {
+            transform: skew(20deg,20deg);
+        }
+        #n13:checked ~ .main {
+            transform: skew(30deg,30deg);
+        }
+        #n14:checked ~ .main {
+            transform: skewX(30deg);
+        }
+        #n15:checked ~ .main {
+            transform: skewX(40deg);
+        }
+        #n16:checked ~ .main {
+            transform: skewY(30deg);
+        }
+        #n17:checked ~ .main {
+            transform: skewY(40deg);
+        }
+        #n18:checked ~ .main {
+            transform: translate(20px,10px);
+        }
+        #n19:checked ~ .main {
+            transform: translate(20px,20px);
+        }
+        #n20:checked ~ .main {
+            transform: scale(2,2);
+        }
+        #n21:checked ~ .main {
+            transform: scale(2.5,3);
+        }
+        #n22:checked ~ .main {
+            transform: scaleX(1.5);
+        }
+        #n23:checked ~ .main {
+            transform: scaleX(50%);
+        }
+        #n24:checked ~ .main {
+            transform: scaleY(1.5);
+        }
+        
+        #n25:checked ~ .main {
+            transform: scaleY(50%);
+        }
+        
+        #n26:checked ~ .main {
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+        }
+        
+        #n27:checked ~ .main {
+            transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+        }
+        #n28:checked ~ .main {
+            transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        }
+
+        @media  screen and (max-width:500px) {
+
+            label{
+                font-size: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>Transforms</h1></header>
+    <h2 style="text-align: center; padding: 5px; color: rgb(38, 164, 202); text-shadow: 3px 3px 5px rgb(87, 152, 153) ;">Please select an option from below and scroll to the end of the page to view the changes.</h2>
+<div class="tranforms">
+    <form action="">
+   <br>
+   <input name="transform" type="radio" id="n1"><label for="n1">transform: none;..............................</label>
+   <br><br>
+
+  <br> <input name="transform" type="radio" id="n2"><label for="n2">transform: rotate(10deg);...............</label>
+   <br><br><br><input name="transform" type="radio" id="n3"><label for="n3">transform: rotate(45deg);................</label> 
+   <br> <br><br><input name="transform" type="radio" id="n4"><label for="n4">transform: rotate3d(1, 2, 1, 45deg);</label> 
+   <br><br> <br><input name="transform" type="radio" id="n5"><label for="n5">transform: rotate3d(0, 1, 0, 60deg);</label> 
+   <br> <br> <br><input name="transform" type="radio" id="n6"><label for="n6">transform: rotateX(45deg);.............</label>
+   <br> <br><br><input name="transform" type="radio" id="n7"><label for="n7">transform: rotateX(100deg);............</label> 
+   <br> <br><br><input name="transform" type="radio" id="n8"><label for="n8">transform: rotateY(45deg);.............</label> 
+   <br><br><br><input name="transform" type="radio" id="n9"><label for="n9">transform: rotateY(80deg);.............</label> 
+   <br><br><br><input name="transform" type="radio" id="n10"><label for="n10">transform: rotateZ(45deg);.............</label> 
+   <br><br><br><input name="transform" type="radio" id="n11"><label for="n11">transform: rotateZ(90deg);.............</label>
+   <br><br><br><input name="transform" type="radio" id="n12"><label for="n12">transform: skew(20deg,20deg);......</label> 
+   <br><br><br><input name="transform" type="radio" id="n13"><label for="n13">transform: skew(30deg,30deg);.......</label> 
+   <br><br><br><input name="transform" type="radio" id="n14"><label for="n14">transform: skewX(30deg);...............</label> 
+   <br><br><br><input name="transform" type="radio" id="n15"><label for="n15">transform: skewX(40deg);...............</label>  
+   <br><br><br><input name="transform" type="radio" id="n16"><label for="n16">transform: skewY(30deg);...............</label> 
+   <br><br><br><input name="transform" type="radio" id="n17"><label for="n17">transform: skewY(40deg);...............</label> 
+   <br><br><br><input name="transform" type="radio" id="n18"><label for="n18">transform: translate(20px,10px);.....</label> 
+   <br><br><br><input name="transform" type="radio" id="n19"><label for="n19">transform: translate(20px,20px);.....</label> 
+   <br><br><br><input name="transform" type="radio" id="n20"><label for="n20">transform: scale(2,2);.......................</label> 
+   <br><br><br><input name="transform" type="radio" id="n21"><label for="n21">transform: scale(2.5,3);...................</label> 
+   <br><br><br><input name="transform" type="radio" id="n22"><label for="n22">transform: scaleX(1.5);...................</label>
+   <br><br><br><input name="transform" type="radio" id="n23"><label for="n23">transform: scaleX(50%);.................</label> 
+   <br><br><br><input name="transform" type="radio" id="n24"><label for="n24">transform: scaleY(1.5);....................</label> 
+   <br><br><br><input name="transform" type="radio" id="n25"><label for="n25">transform: scaleY(50%);.................</label> 
+   <br><br><br><input name="transform" type="radio" id="n26"><label for="n26">transform: matrix(0.866,0.7,-0.8,0.866,0,0);</label> 
+   <br><br><br><input name="transform" type="radio" id="n27"><label for="n27">transform: matrix(0.586,0.8,-0.8,0.586,0,0);</label> 
+   <br><br><br><input name="transform" type="radio" id="n28"><label for="n28">transform: matric(0.586,0.8,-0.8,0.586,0,0);</label> 
+   
+   <main class="main"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit iusto mollitia dolore quae, vimilique provident culpa.</p></main>
+</form>
+</div>
+</body>
+</html>
